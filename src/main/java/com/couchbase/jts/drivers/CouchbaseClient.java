@@ -386,6 +386,7 @@ public class  CouchbaseClient extends Client {
 			JsonArray colJson = JsonArray.from(randomCollections);
 			opt.raw("scope", scopeJson).raw("collections", colJson);
 		}
+		logWriter.logMessage("Search Opt:" + opt);
 		return opt;
 	}
 
